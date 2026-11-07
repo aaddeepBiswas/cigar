@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <title>AFTERGLOW — A 2D Smoke Study</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="wordmark" href="#" aria-label="Afterglow home">AFTER<span>GLOW</span><i>®</i></a>
+    <div class="top-note"><span class="status-dot"></span> AN INTERACTIVE VISUAL STUDY</div>
+    <button class="sound-button" id="smokeToggle" type="button" aria-pressed="true">
+      <span class="toggle-dot"></span><span id="toggleText">SMOKE: ON</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span>01</span> &nbsp; STILL LIFE / DIGITAL EXPERIMENT</div>
+      <h1>THE ART OF<br><em>AFTERGLOW.</em></h1>
+      <p class="intro">A quiet study in light, movement and atmosphere.<br>“Some things are beautiful because they do not stay.”</p>
+
+      <div class="stage" id="stage">
+        <div class="ambient ambient-one"></div>
+        <div class="ambient ambient-two"></div>
+        <div class="smoke-halo"></div>
+        <canvas id="smokeCanvas" aria-label="Animated abstract smoke"></canvas>
+
+        <div class="cigarette-wrap" id="cigaretteWrap" role="img" aria-label="Stylized illustrated cigarette with a glowing ember">
+          <div class="cigarette">
+            <div class="paper">
+              <div class="paper-highlight"></div>
+              <div class="paper-line"></div>
+            </div>
+            <div class="filter">
+              <div class="filter-band"></div>
+              <div class="filter-shine"></div>
+            </div>
+            <div class="ember">
+              <span class="ember-core"></span>
+              <span class="ember-spark"></span>
+            </div>
+          </div>
+          <div class="cig-shadow"></div>
+        </div>
+
+        <div class="stage-label stage-label-left">FIG. 001 <span>— OBJECT STUDY</span></div>
+        <div class="stage-label stage-label-right">MOVE TO DISTURB THE AIR ↗</div>
+        <div class="crosshair" id="crosshair" aria-hidden="true">+</div>
+      </div>
+
+      <div class="under-stage">
+        <div class="caption"><span class="caption-mark"></span> A MOMENT, SUSPENDED IN TIME.</div>
+        <button class="replay-button" id="replayButton" type="button">↻ &nbsp; RESET ATMOSPHERE</button>
+      </div>
+    </section>
+
+    <section class="quote-section" aria-labelledby="quoteTitle">
+      <div class="quote-heading">
+        <span class="detail-index">04 / WORDS IN THE AIR</span>
+        <span class="quote-kicker">A COLLECTION OF PASSING THOUGHTS</span>
+      </div>
+      <div class="quote-card">
+        <span class="quote-mark">“</span>
+        <p class="quote-text" id="quoteText">Even the longest night is made of moments that pass.</p>
+        <div class="quote-bottom">
+          <span class="quote-count" id="quoteCount">LINE 01 / 06</span>
+          <button class="quote-next" id="quoteNext" type="button">ANOTHER LINE <span>↗</span></button>
+        </div>
+      </div>
+      <div class="slogan-strip" aria-label="Project slogans">
+        <span>NOTHING LASTS FOREVER.</span>
+        <i>✳</i>
+        <span>A STUDY IN SMOKE, NOT AN INVITATION.</span>
+        <i>✳</i>
+        <span>LET THE MOMENT PASS.</span>
+      </div>
+    </section>
+
+    <section class="details">
+      <div class="detail-block">
+        <span class="detail-index">01 / MOTION</span>
+        <h2>Follow the drift.</h2>
+        <p>Smoke moves in slow, layered currents. Move your pointer across the scene to gently disturb its path.</p>
+      </div>
+      <div class="detail-block">
+        <span class="detail-index">02 / LIGHT</span>
+        <h2>A little warmth.</h2>
+        <p>The ember is a small point of contrast against the cool, shadowed atmosphere.</p>
+      </div>
+      <div class="detail-block">
+        <span class="detail-index">03 / CONTROL</span>
+        <h2>Set the mood.</h2>
+        <p>Pause the smoke or reset the scene. This is a visual experiment, not a smoking guide.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>AFTERGLOW® — DIGITAL STILL LIFE</span>
+    <span>MADE OF LIGHT, SHADOW & MOTION</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
